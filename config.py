@@ -34,7 +34,7 @@ DEFAULT_TOP_K = 3
 # MCPツール設定
 # ========================================
 # 就業規則検索ツールの名前
-TOOL_NAME = "search_work_rules_01"
+TOOL_NAME = "search_work_rules"
 
 # 就業規則検索ツールの説明文
 TOOL_DESCRIPTION = "就業規則.docxドキュメントから質問に関連する情報を検索します。"
