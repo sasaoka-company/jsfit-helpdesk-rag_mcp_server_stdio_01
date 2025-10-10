@@ -19,7 +19,7 @@
 # 3. MCP クライアントからの接続
 
 - コマンド: `（プロジェクトルート）\.venv\Scripts\python.exe`
-- 実行スクリプト: `rag_mcp_server_stdio_01.py`
+- 実行スクリプト: `src\rag_mcp_server_stdio_01.py`
 - トランスポート: `stdio`
 
 ## （参考）Claude Desktop から利用する場合の設定例：
@@ -32,7 +32,7 @@
     "mcp-server-stdio-01": {
       "command": "D:\\github_projects\\jsfit-helpdesk-rag_mcp_server_stdio_01\\.venv\\Scripts\\python.exe",
       "args": [
-        "D:\\github_projects\\jsfit-helpdesk-rag_mcp_server_stdio_01\\rag_mcp_server_stdio_01.py"
+        "D:\\github_projects\\jsfit-helpdesk-rag_mcp_server_stdio_01\\src\\rag_mcp_server_stdio_01.py"
       ]
     }
   }
