@@ -8,8 +8,7 @@ from langchain_community.document_loaders import UnstructuredWordDocumentLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from langchain_ollama import OllamaEmbeddings  # Ollama Embeddings
-
-# from langchain_openai import OpenAIEmbeddings  # OpenAI Embeddings
+from langchain_openai import OpenAIEmbeddings  # OpenAI Embeddings
 
 from langchain_community.vectorstores import FAISS
 from src.config import (
@@ -92,7 +91,7 @@ def search(prompt: str) -> list[str]:
         logger.info(f"② 取得ドキュメント: {docs}")
 
         # 検索結果をテキストとして抽出
-        result = [doc.page_content for doc in docs]
+        result: list[str] = [doc.page_content for doc in docs]
         logger.info(f"③ 検索結果: {result}")
 
         return result
